@@ -1,0 +1,60 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#18231e">
+<meta name="color-scheme" content="light">
+{% assign meta_title = page.title | default: site.title %}
+{% if page.url == "/" %}
+{% assign full_title = site.title %}
+{% else %}
+{% capture full_title %}{{ meta_title }} | {{ site.title }}{% endcapture %}
+{% endif %}
+{% assign meta_description = page.description | default: page.excerpt | default: site.description | strip_html |
+strip_newlines | truncate: 160 %}
+<title>{{ full_title | strip }}</title>
+<meta name="description" content="{{ meta_description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ full_title | strip | escape }}">
+<meta property="og:description" content="{{ meta_description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image"
+  content="{{ page.image | default: '/images/huping_ling_background_removed.webp' | absolute_url }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;display=swap"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Huping Ling",
+  "url": "{{ site.url }}",
+  "jobTitle": "Professor Emerita of History",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Truman State University"
+  },
+  "sameAs": [
+    "https://www.facebook.com/huping.ling/",
+    "https://instagram.com/huping.ling/",
+    "https://www.linkedin.com/in/huping-ling-83348646/"
+  ]
+}
+</script>
+{% if jekyll.environment == "production" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWBWV4FN9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-HWBWV4FN9V", { anonymize_ip: true });
+</script>
+{% endif %}

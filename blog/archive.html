@@ -1,0 +1,37 @@
+---
+layout: page
+title: Writing Archive
+eyebrow: Browse
+intro: Find essays, research notes, announcements, and publication news by category or year.
+description: Archive of writing by Professor Huping Ling.
+section: Writing
+---
+<section class="content-section">
+  <div class="shell archive-grid">
+    <aside class="archive-nav">
+      <p class="eyebrow">Categories</p>
+      <nav aria-label="Writing categories">
+        {% assign sorted_categories = site.categories | sort %}
+        {% for category in sorted_categories %}
+          <a href="#{{ category[0] | slugify }}">{{ category[0] }} <span>{{ category[1].size }}</span></a>
+        {% endfor %}
+      </nav>
+    </aside>
+    <div class="archive-groups">
+      {% assign sorted_categories = site.categories | sort %}
+      {% for category in sorted_categories %}
+        <section id="{{ category[0] | slugify }}">
+          <h2>{{ category[0] }}</h2>
+          {% for post in category[1] %}
+            <article>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y · %b %-d" }}</time>
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <a href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">→</a>
+            </article>
+          {% endfor %}
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

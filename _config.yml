@@ -1,0 +1,35 @@
+title: Professor Huping Ling
+description: Historian, author, and editor specializing in Asian American history, migration, and community.
+url: https://www.hupingling.org
+baseurl: ""
+lang: en
+timezone: America/Chicago
+author:
+  name: Huping Ling
+  email: hlingkv@gmail.com
+future: false
+show_drafts: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Huping Ling
+      permalink: /writing/:year/:month/:day/:title/
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - README.md
+  - ADMIN_SETUP.md
+  - Gemfile
+  - Gemfile.lock
+  - images/huping-lecture.png
+  - images/huping-ling-aaas-lifetime-award-2024-2.png
+  - images/huping-ling-aaas-lifetime-award-2024.png

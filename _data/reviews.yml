@@ -1,0 +1,68 @@
+- id: surviving-on-the-gold-mountain
+  book: Surviving on the Gold Mountain
+  quotes:
+    - text: Surviving on the Gold Mountain is a significant addition to our too-scent scholarly literature about Chinese American women. It is a contribution to both the history if immigration and the history of women.
+      source: Roger Daniels, Charles Phelps and Taft Professor of History, University of Cincinnati.
+    - text: Huping Ling has written the most comprehensive history of Chinese American women to date. A work of impressive scope and scholarship.
+      source: Evelyn Nakano Glenn, University of California, Berkeley
+    - text: A pioneering work and a very original study of Chinese American women.
+      source: Wang Gungwu, National University of Singapore
+    - text: Huping Ling’s book is a testament to the growing maturity of Asian American historical literature in the last several decades…
+      source: Benson Tang, Wichita State University, (American Historical Review June 1999).
+- id: chinese-st-louis
+  book: Chinese St. Louis
+  subtitle: From Enclave to Cultural Community
+  quotes:
+    - text: The first full-scale study of the ethnic group in a Midwestern American city.
+      source: Roger Daniels, University of Cincinnati
+    - text: Huping Ling’s study of Chinese St. Louis is a breakthrough volume, the first full-scale study of the ethnic group in a Midwestern American city...
+      source: Dr. Roger Daniels, Charles Phelps Taft Emeritus Professor of History at University of Cincinnati and a prominent pioneer scholar of Asian American studies.
+    - text: A wonderful study, rich with insight and sophistication.
+      source: Franklin Ng, Association for Asian American Studies
+    - text: Chapter of the book wins Best Article Award at 2006 Missouri Conference on History; Five Starred Reviews; featured in St. Louis Post-Dispatch, West End Word, KMOX, and KWMU.
+
+- id: voices-of-the-heart
+  book: Voices of the Heart
+  subtitle: Asian American Women on Immigration, Work, and Family
+  quotes:
+    - text: Voices of the Heart includes Chinese, Japanese, Filipina, Korean, and Asian Indian women as well as the newer Asian groups of Vietnamese, Laotians, Hmong, Thais, and Pakistanis... These are new Americans we need to meet.
+      source: Jack Tchen, New York University
+    - text: Told in their own words, Voices of the Heart uncovers the dazzling diversity of Asian American women’s experiences as immigrants, workers, students, wives, mothers, daughters, and adoptees.
+      source: Evelyn Nakano Glenn, University of California, Berkeley
+    - text: Unlike most books about Asian American women that focus on those who are from the coasts, Huping Ling gives voice to Asian American women in the Midwest...a worthy addition to the growing literature about Asian American women.
+      source: Dr. Franklin Ng, president of the Association of Asian American Studies.
+    - text: A vivid picture of the impact of immigration on an individual level.
+      source: K. B. Nutter, SUNY Stony Brook for Choice.
+    - text: Highly recommended to anyone who seeks a more complete view of Americana and American history in general.
+      source: The Midwest Book Review
+    - text: This comprehensive oral history recognizes the challenges faced by immigrant women adjusting to a new culture while working to preserve their ethnic identity.
+      source: State Historical Society of Missouri
+- id: asian-america
+  book: Asian America
+  quotes:
+    - text: Solid scholarship presenting fresh and original research findings highlighting new phenomena in Asian American communities.
+      source: Shehong Chen, University of Massachusetts Lowell
+- id: emerging-voices
+  book: Emerging Voices
+  quotes:
+    - text: Long overdue. Emerging Voices meets an important need and fills a significant gap in the field of Asian American Studies.
+      source: Yong Chen
+    - text: A unique project that broadens our understanding of diversity and promises to bring new Asian American groups into focus in a valuable way.
+      source: George Anthony Peffer, editor of the Journal of Asian American Studies
+- id: asian-american-history-and-culture
+  book: Asian American History and Culture
+  quotes:
+    - text: Here is a unique reference work focusing on the history, culture, contributions, and challenges of a variety of Asian-origin groups in the U.S. … This is an excellent resource that will be used wherever there are immigrant communities or where students need a starting point for research topics. Great for high-school, college, and public libraries.
+      source: Booklist
+    - text: An excellent, up-to-date resource that will prove valuable to general readers and students.
+      source: School Library Journal
+- id: chinese-chicago
+  book: Chinese Chicago
+  quotes:
+    - text: A unique and valuable study, sure to deepen our understanding of extra-national migratory studies in the development of modernity.
+      source: John Kuo Wei Tchen, New York University
+    - text: Connects the past to the present by taking an in-depth look at the post-war forces that have transformed and continue to transform Chinese Chicago.
+      source: Yong Chen, author of Chinese San Francisco, 1850-1943, A Trans-Pacific Community.
+    - text: A landmark addition to the growing Chinese American transnational historiography.
+      source: Haiming Liu
+

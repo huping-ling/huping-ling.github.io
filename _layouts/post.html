@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="article">
+  <header class="article-header">
+    <div class="measure">
+      <a class="back-link" href="{{ '/blog/' | relative_url }}"><span aria-hidden="true">←</span> All writing</a>
+      <p class="eyebrow">{{ page.categories | first | default: "Writing" }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}<p class="article-deck">{{ page.excerpt }}</p>{% endif %}
+      <p class="article-byline">
+        By {{ page.author | default: site.author.name }} ·
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      </p>
+    </div>
+  </header>
+  {% if page.image %}
+    <figure class="article-image shell">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}">
+      {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+    </figure>
+  {% endif %}
+  <div class="article-body measure">
+    {{ content }}
+  </div>
+  <footer class="article-footer measure">
+    <div class="tag-list">
+      {% for category in page.categories %}<a href="{{ '/blog/archive.html' | relative_url }}#{{ category | slugify }}">{{ category }}</a>{% endfor %}
+    </div>
+    <a class="button button--outline" href="{{ '/blog/' | relative_url }}">More writing</a>
+  </footer>
+  {% if page.previous or page.next %}
+    <nav class="post-navigation shell" aria-label="More articles">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}">
+          <span>Previous article</span>
+          <strong>{{ page.previous.title }}</strong>
+        </a>
+      {% endif %}
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}">
+          <span>Next article</span>
+          <strong>{{ page.next.title }}</strong>
+        </a>
+      {% endif %}
+    </nav>
+  {% endif %}
+</article>

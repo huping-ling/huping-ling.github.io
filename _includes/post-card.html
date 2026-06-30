@@ -1,0 +1,15 @@
+<article class="post-card{% if include.featured %} post-card--feature{% endif %}">
+  <div class="post-card__number">{{ include.number | prepend: "0" | slice: -2, 2 }}</div>
+  <div>
+    <p class="post-meta">
+      {% if include.post.categories.first %}<span>{{ include.post.categories.first }}</span>{% endif %}
+      <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" }}</time>
+    </p>
+    <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+    {% if include.featured %}
+      <p>{{ include.post.excerpt | strip_html | truncatewords: 26 }}</p>
+    {% endif %}
+    <a class="read-link" href="{{ include.post.url | relative_url }}">Read article <span aria-hidden="true">→</span></a>
+  </div>
+</article>
+

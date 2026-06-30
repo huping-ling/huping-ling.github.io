@@ -1,0 +1,18 @@
+- label: About
+  url: /about.html
+- label: Scholarship
+  url: /books.html
+  children:
+    - label: Books
+      url: /books.html
+    - label: Publications
+      url: /publications.html
+- label: Talks & Media
+  url: /talks.html
+- label: Writing
+  url: /blog/
+- label: Honors
+  url: /awards.html
+- label: Contact
+  url: /contact.html
+

@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: huping-ling/huping-ling.github.io
+  branch: main
+
+site_url: https://www.hupingling.org
+display_url: https://www.hupingling.org
+logo_url: https://www.hupingling.org/favicon.svg
+
+media_folder: images/posts
+public_folder: /images/posts
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: posts
+    label: Writing
+    label_singular: Article
+    folder: _posts
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{date | date('YYYY-MM-DD')}} · {{title}}"
+    sortable_fields:
+      - date
+      - title
+      - categories
+    view_filters:
+      - label: News
+        field: categories
+        pattern: News
+      - label: Essays
+        field: categories
+        pattern: Essays
+      - label: Research Notes
+        field: categories
+        pattern: Research Notes
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Publication date
+        name: date
+        widget: datetime
+        date_format: YYYY-MM-DD
+        time_format: HH:mm
+        required: true
+      - label: Short summary
+        name: excerpt
+        widget: text
+        hint: One or two sentences shown on listing pages and in search results.
+        required: true
+      - label: Categories
+        name: categories
+        widget: select
+        multiple: true
+        min: 1
+        options:
+          - News
+          - Essays
+          - Research Notes
+          - Books
+          - Talks
+        default:
+          - News
+      - label: Featured image
+        name: image
+        widget: image
+        required: false
+        choose_url: false
+      - label: Image description
+        name: image_alt
+        widget: string
+        required: false
+        hint: Briefly describe the image for visitors using screen readers.
+      - label: Article
+        name: body
+        widget: richtext
+        required: true
+
+  - name: site_data
+    label: Site Content
+    files:
+      - label: Talks
+        name: talks
+        file: _data/talks.yml
+        fields:
+          - label: Featured recordings
+            name: featured
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Venue, name: venue, widget: string }
+              - { label: Date, name: date, widget: string, required: false }
+              - { label: Recording URL, name: url, widget: string }
+          - label: Appearances
+            name: appearances
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Type, name: type, widget: string }
+              - { label: Venue, name: venue, widget: string }
+              - { label: Date, name: date, widget: string }
+              - { label: Recording URL, name: url, widget: string, required: false }
