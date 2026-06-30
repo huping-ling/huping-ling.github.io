@@ -7,6 +7,7 @@
   image: /images/asian-american-history.png
   buy_url: https://www.rutgersuniversitypress.org/asian-american-history/9781978826236/
   chapter_url: https://drive.google.com/file/d/1_b22VQuc19Z12JBndstOAT8wp8nzkwuy/view?usp=sharing
+
 - title: Chinese Americans in the Heartland
   subtitle: Migration, Work, and Community
   publisher: Rutgers University Press
@@ -16,6 +17,7 @@
   image: /images/LingCover-CAH.jpg
   buy_url: https://a.co/d/bT5tch0
   chapter_url: https://drive.google.com/file/d/1_b22VQuc19Z12JBndstOAT8wp8nzkwuy/view?usp=sharing
+
 - title: Chinese Chicago
   subtitle: Race, Transnational Migration, and Community since 1870
   publisher: Stanford University Press
@@ -25,6 +27,17 @@
   image: /images/chinese_chicago.webp
   buy_url: https://a.co/d/cycYpU7
   review_anchor: chinese-chicago
+
+- title: Voices of the Heart
+  subtitle: Asian American Women on Immigration, Work, and Family
+  publisher: Truman State University Press
+  year: 2007
+  description: Oral histories of Asian American women in the Midwest, spanning migration, work, family, identity, and cross-cultural life.
+  image: /images/voices_of_the_heart.jpg
+  buy_url: https://a.co/d/5gUOcI3
+  chapter_url: https://docs.google.com/document/d/1dBpPDl5yi6FERWL071NtZdnWVH_-ryAs/edit?usp=sharing
+  review_anchor: voices-of-the-heart
+
 - title: Chinese St. Louis
   subtitle: From Enclave to Cultural Community
   publisher: Temple University Press
@@ -35,15 +48,27 @@
   buy_url: https://www.amazon.com/Chinese-St-Louis-Cultural-Community/dp/1592130399/
   chapter_url: https://docs.google.com/document/d/0B0Hi6oVlN4O9dGFLTTFzVlk2RjA/edit?usp=sharing&resourcekey=0-EifiYfkBaHV3zToOMCq6aA
   review_anchor: chinese-st-louis
-- title: Voices of the Heart
-  subtitle: Asian American Women on Immigration, Work, and Family
-  publisher: Truman State University Press
-  year: 2007
-  description: Oral histories of Asian American women in the Midwest, spanning migration, work, family, identity, and cross-cultural life.
-  image: /images/voices_of_the_heart.jpg
-  buy_url: https://a.co/d/5gUOcI3
-  chapter_url: https://docs.google.com/document/d/1dBpPDl5yi6FERWL071NtZdnWVH_-ryAs/edit?usp=sharing
-  review_anchor: voices-of-the-heart
+
+- title: Surviving on the Gold Mountain
+  subtitle: A History of Chinese American Women and Their Lives
+  publisher: State University of New York Press
+  year: 1998
+  image: /images/surviving-on-gold-mountain.png
+  description: A pioneering, wide-ranging history of Chinese American women across regions, generations, and social worlds.
+  buy_url: https://www.amazon.com/Surviving-Gold-Mountain-History-American/dp/0791438635/
+  chapter_url: https://docs.google.com/document/d/0B0Hi6oVlN4O9S3lfVlJhaDNIRmM/edit?resourcekey=0--KM41OVaZQU90RfCMkaFfw
+  review_anchor: surviving-on-the-gold-mountain
+
+- title: Asian American History and Culture
+  subtitle: An Encyclopedia
+  publisher: M. E. Sharpe
+  year: 2010
+  role: Co-editor
+  description: A two-volume reference work covering the histories and cultures of twenty-one Asian American groups.
+  image: /images/asian_american_encyclopedia.webp
+  buy_url: https://a.co/d/4S4AopK
+  review_anchor: asian-american-history-and-culture
+
 - title: Asian America
   subtitle: Forming New Communities, Expanding Boundaries
   publisher: Rutgers University Press
@@ -54,6 +79,7 @@
   buy_url: https://a.co/d/iFLIm3W
   chapter_url: https://docs.google.com/document/d/1lvPOMK6FsgwgJk2T9wZzNVQqyAJRq9Kz/edit?usp=sharing
   review_anchor: asian-america
+
 - title: Emerging Voices
   subtitle: Experiences of Underrepresented Asian Americans
   publisher: Rutgers University Press
@@ -64,29 +90,13 @@
   buy_url: https://a.co/d/hhCj6ay
   chapter_url: https://docs.google.com/document/d/1pLLdKVTo-Za4B3MIfrxb_7uHzoG7Edn7/edit?usp=sharing
   review_anchor: emerging-voices
-- title: Surviving on the Gold Mountain
-  subtitle: A History of Chinese American Women and Their Lives
-  publisher: State University of New York Press
-  year: 1998
-  image: /images/surviving-on-gold-mountain.png
-  description: A pioneering, wide-ranging history of Chinese American women across regions, generations, and social worlds.
-  buy_url: https://www.amazon.com/Surviving-Gold-Mountain-History-American/dp/0791438635/
-  chapter_url: https://docs.google.com/document/d/0B0Hi6oVlN4O9S3lfVlJhaDNIRmM/edit?resourcekey=0--KM41OVaZQU90RfCMkaFfw
-  review_anchor: surviving-on-the-gold-mountain
-- title: Asian American History and Culture
-  subtitle: An Encyclopedia
-  publisher: M. E. Sharpe
-  year: 2010
-  role: Co-editor
-  description: A two-volume reference work covering the histories and cultures of twenty-one Asian American groups.
-  image: /images/asian_american_encyclopedia.webp
-  buy_url: https://a.co/d/4S4AopK
-  review_anchor: asian-american-history-and-culture
+
 - title: A New Chinese American History
   publisher: China Overseas Chinese Publishing House
   year: 2017
   image: /images/a-new-chinese-american-history-in-chinese.png
   description: A comprehensive history of Chinese Americans from the seventeenth century to the present, published in the Overseas Chinese History Series.
+
 - title: Jinshan Yao
   subtitle: A History of Chinese American Women
   publisher: Showwei
